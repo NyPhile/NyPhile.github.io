@@ -468,8 +468,7 @@ html,
 }
 .section3 .text #run {
   font-size: 80px;
-  font-weight: bold;
-  vertical-align: sub;
+  vertical-align: bottom;
 }
 @keyframes arr {
   0% {
