@@ -25,12 +25,7 @@
 <body>
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide section1">
-				<div class="filter"></div>
-				<div class="title"><h1>WEDDING</h1><span>INVITATION</span></div>
-				<div class="time">2016.3.20</div>
-				<div class="name">王震 <span>&</span> 张宁毓</div>
-			</div>
+			<div class="swiper-slide section1"></div>
 			<div class="swiper-slide">Slide 2</div>
 			<div class="swiper-slide">Slide 3</div>
 		</div>
