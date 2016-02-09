@@ -3,7 +3,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 	direction: 'vertical',
 	loop: false,
 	onTransitionEnd: function(swiper){
-		alert(mySwiper.activeIndex)
+		//alert(mySwiper.activeIndex)
 		if(mySwiper.activeIndex == 2){
 			run();
 		}
