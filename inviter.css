@@ -334,7 +334,8 @@ html,
   right: 0;
   bottom: 0;
   background: #042645;
-  opacity: 0.4;
+  opacity: 0;
+  transition: 1s ease 0.5s;
 }
 .section1 .title {
   position: absolute;
@@ -346,9 +347,13 @@ html,
 }
 .section1 .title h1 {
   font: 140px/140px "Gill Sans";
+  opacity: 0;
+  transition: 0.5s ease 1s;
 }
 .section1 .title span {
   font: 40px/60px "Gill Sans";
+  opacity: 0;
+  transition: 0.5s ease 1.25s;
 }
 .section1 .time {
   position: absolute;
@@ -358,6 +363,8 @@ html,
   font: 60px/60px "Helvetica";
   color: #fff;
   text-align: center;
+  opacity: 0;
+  transition: 0.5s ease 1.5s;
 }
 .section1 .name {
   position: absolute;
@@ -367,7 +374,30 @@ html,
   font: 40px/60px "Helvetica";
   color: #fff;
   text-align: center;
+  opacity: 0;
+  transition: 0.5s ease 1.75s;
 }
 .section1 .name span {
   font-size: 28px;
+}
+.section1 .arr {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 88px;
+  height: 48px;
+  margin-left: -44px;
+  background: url(images/arr.png) center center no-repeat;
+  opacity: 0;
+  transition: 0.5s ease 2s;
+}
+.section1.swiper-slide-active .filter {
+  opacity: 0.4;
+}
+.section1.swiper-slide-active .title h1,
+.section1.swiper-slide-active .title span,
+.section1.swiper-slide-active .name,
+.section1.swiper-slide-active .time,
+.section1.swiper-slide-active .arr {
+  opacity: 1;
 }
