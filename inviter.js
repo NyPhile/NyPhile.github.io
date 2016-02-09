@@ -1,6 +1,22 @@
 "use strict";      
 var mySwiper = new Swiper ('.swiper-container', {
 	direction: 'vertical',
-	loop: false
-
-})        
+	loop: false,
+	onTransitionEnd: function(swiper){
+		if(mySwiper.activeIndex == 2){
+			run();
+		}
+    }
+})
+function run(){
+	function runadd(){
+		setTimeout(function(){
+			var year = $('#run').html();
+			$('#run').html(parseInt(year, 10) + 1)
+			if(year < 6){
+				runadd();
+			}
+		}, 50)
+	}
+	runadd()
+}     
