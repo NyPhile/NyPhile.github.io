@@ -315,6 +315,10 @@ a.cYellow:hover {
 .ml12 {
   margin-left: 12px;
 }
+body {
+  font-size: 80px;
+  line-height: 1;
+}
 body,
 html,
 .swiper-container {
@@ -322,10 +326,6 @@ html,
 }
 .swiper-slide {
   position: relative;
-}
-.section1 {
-  background: url(images/bg1.jpg);
-  background-size: cover;
 }
 .section1 .filter {
   position: absolute;
@@ -336,6 +336,18 @@ html,
   background: #042645;
   opacity: 0;
   transition: 1s ease 0.5s;
+}
+.section1 .bg {
+  background: url(images/bg1.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: 5s ease;
+  transform-origin: center bottom;
+  transform: scale(1.03, 1.03);
 }
 .section1 .title {
   position: absolute;
@@ -401,6 +413,9 @@ html,
 .section1.swiper-slide-active .time,
 .section1.swiper-slide-active .arr {
   opacity: 1;
+}
+.section1.swiper-slide-active .bg {
+  transform: scale(1.05, 1.05);
 }
 .section2 {
   background: url(images/bg2.jpg) center bottom;
@@ -469,6 +484,287 @@ html,
 .section3 .text #run {
   font-size: 80px;
   vertical-align: sub;
+}
+.section3 .arr {
+  opacity: 1;
+}
+.section4 {
+  background: url(images/bg4.jpg) center bottom;
+  background-size: cover;
+}
+.section4 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  font: 40px/80px "";
+  color: #fff;
+  text-align: center;
+}
+.section4 .text span {
+  font-size: 80px;
+  vertical-align: sub;
+}
+.section4 .arr {
+  opacity: 1;
+}
+.section5 {
+  background: url(images/bg5.jpg) center bottom;
+  background-size: cover;
+}
+.section5 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: center;
+}
+.section5 .arr {
+  opacity: 1;
+}
+.section6 {
+  background: url(images/bg6.jpg) center bottom;
+  background-size: cover;
+}
+.section6 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: center;
+}
+.section6 .arr {
+  opacity: 1;
+}
+.section7 {
+  background: url(images/bg7.jpg) center bottom;
+  background-size: cover;
+}
+.section7 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: center;
+}
+.section7 .arr {
+  opacity: 1;
+}
+.section8 {
+  background: url(images/bg8.jpg) center bottom;
+  background-size: cover;
+}
+.section8 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: center;
+}
+.section8 .arr {
+  opacity: 1;
+}
+.section9 {
+  background: url(images/bg9.jpg) center bottom;
+  background-size: cover;
+}
+.section9 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 205px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: center;
+}
+.section9 .arr {
+  opacity: 1;
+}
+.section10 {
+  background: url(images/bg10.jpg) center bottom;
+  background-size: cover;
+}
+.section10 .text {
+  position: absolute;
+  left: 230px;
+  right: 0;
+  top: 84px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: left;
+}
+.section10 .text span {
+  display: block;
+  text-indent: 2.5em;
+}
+.section10 .arr {
+  opacity: 1;
+}
+.section11 {
+  background: url(images/bg11.jpg) center bottom;
+  background-size: cover;
+}
+.section11 .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  font: 40px/72px "";
+  color: #fff;
+  text-align: center;
+}
+.section11 .arr {
+  opacity: 1;
+}
+.section12 {
+  background: url(images/bg12.jpg) center bottom;
+  background-size: cover;
+}
+.section12 .arr {
+  opacity: 1;
+  background-image: url(images/arr_blue.png);
+}
+.section13 {
+  background: url(images/bg13.jpg) center bottom;
+  background-size: cover;
+}
+.section13 .title {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  margin-top: -515px;
+  font: bold 90px/1 "Gill", "Sans";
+  color: #fff;
+}
+.section13 .info {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  font: 34px/48px "";
+  color: #e1e5ce;
+}
+.section13 .info p {
+  font-size: 30px;
+  color: #fff;
+}
+.section13 .time {
+  margin-top: -370px;
+}
+.section13 .hotel {
+  margin-top: -250px;
+}
+.section13 .address {
+  margin-top: -130px;
+}
+.section13 .map {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  margin-top: 20px;
+  background: url(images/map.png) no-repeat;
+  width: 670px;
+  height: 360px;
+}
+.section13 .location {
+  position: absolute;
+  left: 478px;
+  top: 186px;
+  background: url(images/location.png) no-repeat;
+  width: 23px;
+  height: 32px;
+}
+.section13 .shadow {
+  position: absolute;
+  left: 486px;
+  top: 212px;
+  background: url(images/shadow.png) no-repeat;
+  width: 20px;
+  height: 8px;
+}
+.section13 .tip {
+  position: absolute;
+  left: 333px;
+  top: 75px;
+  background: url(images/tip.png) no-repeat;
+  width: 320px;
+  height: 142px;
+}
+.section13 .arr {
+  opacity: 1;
+}
+.section14 {
+  background: #fff;
+}
+.section14 .title {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  margin-top: -515px;
+  font: bold 90px/1 "Gill", "Sans";
+  color: #1e666c;
+}
+.section14 .line {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 50%;
+  overflow: hidden;
+}
+.section14 .line label {
+  float: left;
+  display: block;
+  width: 90px;
+  font: 32px/82px "";
+  color: #1e666c;
+}
+.section14 .line .input {
+  float: right;
+  position: relative;
+  width: 525px;
+  padding: 0 25px;
+  background: #f7f7f7;
+  overflow: hidden;
+  border: 1px solid #e2e2e2;
+  border-radius: 7px;
+}
+.section14 .line .input input {
+  display: block;
+  width: 100%;
+  height: 80px;
+  font: 28px/80px "";
+  color: #444;
+  background-color: transparent;
+  border: none;
+}
+.section14 .line .select-cnt {
+  font: 28px/80px "";
+  color: #ccc;
+}
+.section14 .line select {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.section14 .line-name {
+  margin-top: -365px;
+}
+.section14 .line-people {
+  margin-top: -245px;
+}
+.section14 .line-wish {
+  margin-top: -125px;
 }
 @keyframes arr {
   0% {
