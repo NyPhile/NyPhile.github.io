@@ -8,6 +8,8 @@ var mySwiper = new Swiper ('.swiper-container', {
 			run();
 		}else if(mySwiper.activeIndex == 3){
 			run3();
+		}else if(mySwiper.activeIndex == 4){
+			//run4('#s5',['我','们','一','起','努','力','<br>','一','起','成','长'],400);
 		}
     }
 })
@@ -26,5 +28,50 @@ function run(){
 	runadd()
 }
 function run3(){
+	function aniNumber(el, start, end, time){
+		$(el).html(start);
+		var timer = setInterval(function(){
+			if(parseInt($(el).html(),10)>=end){
+				clearInterval(timer);
+				return;
+			}
+			$(el).html(parseInt($(el).html(),10)+1);
+		},time)
+	}
+	function aniNumber2(el, start, time, n){
+		var flag = 0;
+		$(el).html(start);
+		var timer = setInterval(function(){
+			if(flag==n){
+				clearInterval(timer);
+				return;
+			}
+			var result = parseInt($(el).html(),10)+1 == 10?0:parseInt($(el).html(),10)+1
+			$(el).html(result);
+			flag += 1;
+		},time)
+	}
+	aniNumber('#s31',0,8,150);
+	aniNumber2('#s32',0,55,21);
+	aniNumber2('#s33',1,50,21);
+	aniNumber('#s34',0,4,80);
+	aniNumber('#s35',1,7,60);
+	aniNumber('#s36',0,7,65);
+}
+function runtext(el,arr,time){
+	$(el).html('');
+	var flag = 0;
+	var timer = setInterval(function(){
+		$(el).html($(el).html()+arr[flag]);
+		flag += 1;
+		if(flag == arr.length){
+			clearInterval(timer);
+		}
+	},time)
+}
+function choose(el){
+	var aaa = el.options[el.options.selectedIndex].innerHTML
+	$('#select').addClass('active').html(aaa)
+}
 
-}  
+
