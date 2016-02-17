@@ -916,7 +916,7 @@ html,
   position: relative;
   width: 525px;
   padding: 22px;
-  background: #f7f7f7 url(images/tri.png) no-repeat 200px 20px;
+  background: #f7f7f7 ;
   overflow: hidden;
   border: 1px solid #e2e2e2;
   border-radius: 7px;
