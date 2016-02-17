@@ -858,7 +858,7 @@ html,
   float: right;
   position: relative;
   width: 525px;
-  padding: 25px;
+  padding: 22px;
   background: #f7f7f7;
   overflow: hidden;
   border: 1px solid #e2e2e2;
@@ -867,15 +867,15 @@ html,
 .section14 .line .input input {
   display: block;
   width: 100%;
-  height: 30px;
-  font: 28px/30px "";
+  height: 36px;
+  font: 28px/36px "";
   color: #444;
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
 .section14 .line .select-cnt {
-  font: 28px/30px "";
+  font: 28px/36px "";
   color: #aaa;
 }
 .section14 .line .select-cnt.active {
