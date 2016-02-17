@@ -789,7 +789,7 @@ html,
   left: 50px;
   top: 50%;
   margin-top: -515px;
-  font: bold 90px/1 "Gill", "Sans";
+  font: 90px/1 "Gill Sans";
   color: #fff;
 }
 .section13 .info {
@@ -894,7 +894,7 @@ html,
   left: 50px;
   top: 50%;
   margin-top: -515px;
-  font: bold 90px/1 "Gill", "Sans";
+  font: 90px/1 "Gill Sans";
   color: #1e666c;
 }
 .section14 .line {
@@ -916,7 +916,7 @@ html,
   position: relative;
   width: 525px;
   padding: 22px;
-  background: #f7f7f7;
+  background: #f7f7f7 url(images/tri.png) no-repeat 200px 20px;
   overflow: hidden;
   border: 1px solid #e2e2e2;
   border-radius: 7px;
@@ -934,6 +934,7 @@ html,
 .section14 .line .select-cnt {
   font: 28px/36px "";
   color: #aaa;
+  background: url(images/tri.png) no-repeat 505px 15px;
 }
 .section14 .line .select-cnt.active {
   color: #444;
@@ -989,6 +990,10 @@ html,
   margin-top: 10px;
   text-align: left;
   font: 24px/40px "";
+  color: #888;
+}
+.section14 .info span {
+  font-weight: bold;
 }
 .section14 .info span:nth-child(2) {
   padding-left: 2em;

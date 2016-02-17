@@ -13,6 +13,9 @@ var mySwiper = new Swiper ('.swiper-container', {
 		}
     }
 })
+$('.arr').click(function(){
+mySwiper.slideNext();
+})
 function run(){
 	$('#run').html('0');
 	var time = 50;
@@ -53,7 +56,7 @@ function run3(){
 	}
 	aniNumber('#s31',0,8,130);
 	aniNumber2('#s32',0,40,21);
-	aniNumber2('#s33',1,45,21);
+	aniNumber2('#s33',0,245,2);
 	aniNumber('#s34',0,4,100);
 	aniNumber('#s35',1,7,85);
 	aniNumber('#s36',0,7,80);
@@ -74,4 +77,57 @@ function choose(el){
 	$('#select').addClass('active').html(aaa)
 }
 
+var imgUrl = 'http://nyphile.github.io/images/share.png';
+var lineLink = 'http://nyphile.github.io/';
+var descContent = "王震&张宁毓 婚礼请柬";
+var shareTitle = '我们结婚啦！';
+var appid = '';
+function shareFriend() {
+    WeixinJSBridge.invoke('sendAppMessage',{
+                            "appid": appid,
+                            "img_url": imgUrl,
+                            "img_width": "300",
+                            "img_height": "300",
+                            "link": lineLink,
+                            "desc": descContent,
+                            "title": shareTitle
+                            }, function(res) {
+                            _report('send_msg', res.err_msg);
+                            })
+}
+function shareTimeline() {
+    WeixinJSBridge.invoke('shareTimeline',{
+                            "img_url": imgUrl,
+                            "img_width": "300",
+                            "img_height": "300",
+                            "link": lineLink,
+                            "desc": descContent,
+                            "title": shareTitle
+                            }, function(res) {
+                            _report('timeline', res.err_msg);
+                            });
+}
+function shareWeibo() {
+    WeixinJSBridge.invoke('shareWeibo',{
+                            "content": descContent,
+                            "url": lineLink,
+                            }, function(res) {
+                            _report('weibo', res.err_msg);
+                            });
+}
+// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        // 发送给好友
+        WeixinJSBridge.on('menu:share:appmessage', function(argv){
+            shareFriend();
+            });
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function(argv){
+            shareTimeline();
+            });
+        // 分享到微博
+        WeixinJSBridge.on('menu:share:weibo', function(argv){
+            shareWeibo();
+            });
+        }, false);
 
