@@ -1012,7 +1012,7 @@ html,
   text-align: center;
   color: #fff;
 }
-.section14 .submit:hover {
+.section14 .submit:active {
   background: #226E74;
 }
 @keyframes arr {
