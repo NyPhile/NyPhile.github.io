@@ -51,12 +51,12 @@ function run3(){
 			flag += 1;
 		},time)
 	}
-	aniNumber('#s31',0,8,150);
-	aniNumber2('#s32',0,55,21);
-	aniNumber2('#s33',1,50,21);
-	aniNumber('#s34',0,4,80);
-	aniNumber('#s35',1,7,60);
-	aniNumber('#s36',0,7,65);
+	aniNumber('#s31',0,8,130);
+	aniNumber2('#s32',0,40,21);
+	aniNumber2('#s33',1,45,21);
+	aniNumber('#s34',0,4,100);
+	aniNumber('#s35',1,7,85);
+	aniNumber('#s36',0,7,80);
 }
 function runtext(el,arr,time){
 	$(el).html('');
