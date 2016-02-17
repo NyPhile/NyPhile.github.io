@@ -685,7 +685,7 @@ html,
   transform: translate(50px, 0);
   transition: 2s ease 2s;
 }
-.section10 .text .s1 {
+.section10 .text span.s1 {
   opacity: 0;
   transform: translate(-50px, 0);
   transition: 2s ease 0.5s;
@@ -876,7 +876,7 @@ html,
 }
 .section14 .line .select-cnt {
   font: 28px/30px "";
-  color: #ccc;
+  color: #aaa;
 }
 .section14 .line .select-cnt.active {
   color: #444;
@@ -889,6 +889,16 @@ html,
   right: 0;
   bottom: 0;
   opacity: 0;
+  box-shadow: none;
+}
+.section14 .line textarea {
+  font: 28px/42px "";
+  display: block;
+  color: #444;
+  width: 100%;
+  height: 270px;
+  border: none;
+  background: none;
 }
 .section14 .line-name {
   margin-top: -365px;
@@ -898,6 +908,33 @@ html,
 }
 .section14 .line-wish {
   margin-top: -125px;
+}
+.section14 .text_number {
+  float: right;
+  clear: both;
+  margin-top: 20px;
+  font: 24px/1 "";
+  color: #aaa;
+}
+.section14 .info {
+  width: 670px;
+  margin-top: 270px;
+  padding-top: 40px;
+  text-align: center;
+  font: 26px/40px "";
+  color: #777;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  border-top: 1px solid #ccc;
+}
+.section14 .info p {
+  margin-top: 10px;
+  text-align: left;
+  font: 24px/40px "";
+}
+.section14 .info span:nth-child(2) {
+  padding-left: 2em;
 }
 @keyframes arr {
   0% {
