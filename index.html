@@ -103,29 +103,32 @@
 				<div class="arr"></div>
 			</div>
 			<div class="swiper-slide section14">
-				<div class="title">YOUR WISH</div>
-				<div class="line line-name">
-					<label for="name">姓名</label>
-					<div class="input"><input type="text" id="name" name="name" placeholder="填名字喽"></div>
-				</div>
-				<div class="line line-people">
-					<label for="people">出席</label>
-					<div class="input">
-						<div class="select-cnt" id="select">几个人来呢</div>
-						<select name="people" id="people" onchange="choose(this)">
-							<option value="0">好遗憾，无法出席</option>
-							<option value="1">1人</option>
-							<option value="2">2人</option>
-							<option value="3">3人</option>
-						</select>
+				<form id="form_5379" name="form_5379" class="common_form" action="http://active.163.com/service/form/v1/5379/submit?_charset=UTF-8" method="POST" target="frames">
+					<input name="_success" type="hidden" value="http://dev.f2e.163.com/NyPhile.github.io/inviter.shtml"/><input name="_fail" type="hidden" value="2"/><input id="ua" class="common_form_text form_5379_ua" name="ua" type="hidden" value="">
+					<div class="title">YOUR WISH</div>
+					<div class="line line-name">
+						<label for="name">姓名</label>
+						<div class="input"><input type="text" id="name" name="name" placeholder="填名字喽"></div>
 					</div>
-				</div>
-				<div class="line line-wish">
-					<label for="wish">留言</label>
-					<div class="input"><textarea name="wish" id="wish" placeholder="请留下您的祝福哦"></textarea></div>
-					<div class="text_number hidden">0/100</div>
-				</div>
-				<div class="submit">提 交</div>
+					<div class="line line-people">
+						<label for="people">出席</label>
+						<div class="input">
+							<div class="select-cnt" id="select">几个人来呢</div>
+							<select name="people" id="people" onchange="choose(this)">
+								<option value="不能参加">好遗憾，无法出席</option>
+								<option value="1人">1人</option>
+								<option value="2人">2人</option>
+								<option value="3人">3人</option>
+							</select>
+						</div>
+					</div>
+					<div class="line line-wish">
+						<label for="wish">留言</label>
+						<div class="input"><textarea name="wish" id="wish" placeholder="请留下您的祝福哦"></textarea></div>
+						<div class="text_number hidden">0/100</div>
+					</div>
+					<div class="submit" id="submit" onclick="sunmitForm()">提 交</div>
+				</form>
 				<div class="info">
 					<span>设计：新娘-张宁毓</span><span>开发：新郎-王震</span>
 					<p>由于新娘同学平时是UI设计师一枚，恰好新郎同学又是一名前端“攻城狮”，在这样的搭配下，请柬怎能不亲自设计、亲自实现呐！这是我们的满满诚意，与爆棚的参与感，谢谢大家观赏~</p>
@@ -133,6 +136,7 @@
 			</div>
 		</div>
 	</div>
+	<iframe src="" frameborder="0" id="frames" name="frames" style="display:none;"></iframe>
 <script src="inviter.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--[if IE 6 ]> <html id="ne_wrap" class="ne_ua_ie6 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 7 ]> <html id="ne_wrap" class="ne_ua_ie7 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 8 ]> <html id="ne_wrap" class="ne_ua_ie8 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 9 ]> <html id="ne_wrap" class="ne_ua_ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html id="ne_wrap"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=750, target-densityDpi=device-dpi, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta content="telephone=no" name="format-detection"/>
+<meta content="email=no" name="format-detection"/>
+<meta name="msapplication-tap-highlight" content="no">
+
+<title>婚礼请柬</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="inviter.css" />
+<link rel="stylesheet" href="swiper-3.3.0.min.css" />
+<script src="jquery-1.10.1.min.js"></script>
+<script src="swiper-3.3.0.jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="http://active.163.com/service/service-sample-0.1.js"></script>
+<style>
+	body{font-size: 16px;margin:20px;}
+	.title,.line{
+		overflow: hidden;
+		margin: 10px 0;
+	}
+	.cell1{
+		float: left;width: 10%;
+	}
+	.cell2{
+		float: left;width: 35%;
+	}
+</style>
+<div class="title">
+	<div class="cell1">ID</div>
+	<div class="cell1">姓名</div>
+	<div class="cell1">人数</div>
+	<div class="cell2">祝福</div>
+	<div class="cell2">设备识别码</div>
+</div>
+<!-- 列表内容区域 -->
+<script id="list_5379" type="text/plain">
+<%for(var i=0; i<list.length; i++){%>
+
+<%var e = list[i];%>
+<div class="line">
+	<div class="cell1"><%= e.id%></div>
+	<div class="cell1"><%= e.name%></div>
+	<div class="cell1"><%= e.people%></div>
+	<div class="cell2"><%= e.wish%></div>
+	<div class="cell2"><%= e.ua%></div>
+</div>
+
+<%}%>
+	
+</script>
+
+
+<!-- 分页区域 -->
+<script id="pagebar_5379" type="text/plain">
+第<%= page%> / <%= totalPage%>页(<%= total%>)
+<a href="#" page="1">首页</a>
+<a href="#" page="<%= previousPage%>">上页</a> 
+<%for(var i=0; i<pages.length; i++){%><a href="#" page="<%= pages[i]%>"><%= pages[i]%></a> <%}%>
+<a href="#" page="<%= nextPage%>">下页</a>
+<a href="#" page="<%= totalPage%>">尾页</a>
+</script>
+
+<script type="text/javascript">
+(function(){
+	active.sample.list({
+		formId: 5379,
+		content: ['list_5379'],
+		pagebar: ['pagebar_5379']
+	});
+})();
+</script>
+</body>
+</html>
