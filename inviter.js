@@ -72,10 +72,7 @@ function runtext(el,arr,time){
 		}
 	},time)
 }
-function choose(el){
-	var aaa = el.options[el.options.selectedIndex].innerHTML
-	$('#select').addClass('active').html(aaa)
-}
+
 
 var imgUrl = 'http://nyphile.github.io/images/share.png';
 var lineLink = 'http://nyphile.github.io/';
@@ -131,24 +128,7 @@ document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
             });
         }, false);
 
-if(typeof navigator != "undefined"){
-	$('#ua')[0].value=navigator.userAgent
-};
-(function(){
-	var form = document.getElementById('form_5379');
-	form.onsubmit = function(){
-			if(form.elements['name'].value == ''){
-				alert('"姓名" 为必填项，请填写完整。');
-				form.elements['name'].focus();
-				return false;
-			}
-			if(form.elements['people'].value == ''){
-				alert('"人数" 为必填项，请填写完整。');
-				form.elements['people'].focus();
-				return false;
-			}
-	};
-})();
+
 
 function sunmitForm(){
 	document.form_5379.submit();
